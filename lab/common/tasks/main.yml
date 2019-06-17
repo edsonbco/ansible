@@ -1,0 +1,22 @@
+
+#Gerenciamento de pacotes e atualização do sistema operacional
+
+- name: Atualização do Sistema operacional
+  yum: name=* state=latest update_cache=yes 
+
+- name: Instalação de pacotes
+  yum: 
+    name: "{{ packages }}"
+    state: latest
+  vars:
+    packages:
+      - net-tools
+      - vim
+      - nmap
+      - mc
+#configuração de timezone
+- name: configurando timezone
+  file: src=/usr/share/zoneinfo/America/Sao_Paulo dest=/etc/localtime state=link force=yes
+#Cópia de arquivos
+- name: copiando arquivo de backup
+  copy: src=teste dest=/tmp/teste

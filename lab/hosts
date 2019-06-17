@@ -1,0 +1,14 @@
+
+[linux01]
+192.168.0.65
+
+[linux02]
+srv ansible_ssh_host=192.168.0.66
+
+[servidores:children]
+linux01
+linux02
+
+[linux02:vars]
+ansible_ssh_user=root
+ansible_ssh_pass=emilyinfo
