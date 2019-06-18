@@ -556,3 +556,53 @@ ls
 ansible-playbook -i hosts playbook.yml 
 ssh 192.168.0.65
 exit
+git@github.com:edsonbco/ansible.git
+yum instal git
+git status
+git init
+ls
+git commit -m "first commit"
+git add lab
+git status
+git push
+git pull
+git remote add origin git@github.com:edsonbco/ansible.git
+git pull
+git push -u origin master
+git remote add origin https://github.com/edsonbco/ansible.git
+git push -u origin master
+git --version
+git config --global user.name "edson"
+git config --global user.email "edson@ebctech.com.br"
+git config --list
+git config --global user.name "ebco"
+git config --list
+git init
+git add.
+git add .
+ls
+git status
+git commit
+git commit -m "primeiro commit"
+git remote add origin https://github.com/edsonbco/ansible.git
+git push -u origin master
+ping www.google.com
+cd /etc
+ls]
+ls
+cd /etc
+ls
+cat resolv.conf
+vi resolv.conf
+sudo reboot
+ping www.google.com
+cd /etc
+cd networks 
+ls
+cd sysconfig
+ls
+cd network-scripts/
+ls
+cat ifcfg-eth0 
+vi ifcfg-eth0 
+sudo reboot
